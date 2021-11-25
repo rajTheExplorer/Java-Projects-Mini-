@@ -1,0 +1,15 @@
+
+import java.util.Scanner;
+class App
+{
+    public static void main(String[] args) {
+        System.out.println("Welcome to Band Name generator");
+        Scanner sc=new Scanner(System.in);
+        String cityName=sc.next();
+        cityName=cityName.toUpperCase();
+        System.out.println("What is your pet name");
+        String petName=sc.next();
+        petName=petName.toUpperCase();
+        System.out.println("Your band name is "+cityName+" "+petName);
+    }
+}
