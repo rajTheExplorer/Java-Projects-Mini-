@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class App
+{
+    public static void main(String[] args) {
+        System.out.println("Welcome to tip calculator");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("What was your total bill");
+        double a=sc.nextDouble();
+        System.out.println("How many people to split the bill");
+        double b=sc.nextInt();
+        System.out.println("What percentage tip would you like to give ? 10,12,15");
+        double c=sc.nextDouble();
+        double addTip=(a*c)/100;
+        double share=(a+addTip)/b;
+        System.out.println("Each person should pay");
+        System.out.println(share);
+    }
+}
